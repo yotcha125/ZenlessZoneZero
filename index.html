@@ -68,6 +68,17 @@
             font-size: 2em;
             margin-bottom: 20px;
         }
+        .image-text {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .image-text img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
         .screenshots {
             display: flex;
             justify-content: space-around;
@@ -97,6 +108,33 @@
             color: #FF6F61;
             text-decoration: none;
         }
+        .list-section ul {
+            margin: 0 auto;
+            max-width: 600px;
+            padding-left: 20px;
+        }
+        .list-section ul li {
+            margin: 10px 0;
+        }
+        .table-section {
+            margin: 20px auto;
+            max-width: 600px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .table-section table {
+            width: 100%;
+            border: 1px solid #f5f5f5;
+        }
+        .table-section th, .table-section td {
+            border: 1px solid #f5f5f5;
+            padding: 10px;
+            text-align: left;
+        }
+        .table-section th {
+            background-color: #333;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -117,7 +155,46 @@
 
     <section id="about">
         <h2>About Zenless Zone Zero</h2>
-        <p>Zenless Zone Zero is a dynamic action RPG set in a post-apocalyptic urban fantasy world. With stunning visuals, fast-paced combat, and an engaging story, players will dive into the heart of a mysterious city filled with secrets, challenges, and unforgettable characters.</p>
+        <div class="image-text">
+            <img src="about-image.jpg" alt="Zenless Zone Zero World">
+            <p>Zenless Zone Zero is a dynamic action RPG set in a post-apocalyptic urban fantasy world. With stunning visuals, fast-paced combat, and an engaging story, players will dive into the heart of a mysterious city filled with secrets, challenges, and unforgettable characters.</p>
+        </div>
+    </section>
+
+    <section class="list-section">
+        <h2>Features</h2>
+        <ul>
+            <li>Immersive story with unexpected twists.</li>
+            <li>Unique and diverse characters to interact with.</li>
+            <li>Fast-paced and strategic combat system.</li>
+            <li>Rich, vibrant, and detailed world to explore.</li>
+        </ul>
+    </section>
+
+    <section class="table-section">
+        <h2>Platform Compatibility</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Platform</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PC</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>Console</td>
+                    <td>Coming Soon</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <section id="screenshots">
@@ -132,7 +209,7 @@
     <section id="trailer">
         <h2>Watch the Trailer</h2>
         <div class="trailer">
-            <iframe src="https://www.youtube.com/watch?v=KGOynaQoofc" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/example" allowfullscreen></iframe>
         </div>
     </section>
 
